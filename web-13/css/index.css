@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+.skill {
+  text-align: center;
+  width: 500px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.item {
+
+}
+.item p {
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.item p span:nth-child(1) {
+  float: left;
+}
+.item p span:nth-child(2) {
+  float: right;
+}
+.progress {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 3px;
+}
+.level {
+  height: 10px;
+  background: linear-gradient(90deg, crimson, gold);
+  animation: ani 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes ani {
+  0% {
+    width: 0%;
+  }
+}
+
+
+.skill .item:nth-of-type(1) .level{
+  animation-delay: 0s;
+}
+.skill .item:nth-of-type(2) .level{
+  animation-delay: 0.2s;
+}
+.skill .item:nth-of-type(3) .level{
+  animation-delay: 0.4s;
+}
+.skill .item:nth-of-type(4) .level{
+  animation-delay: 0.6s;
+}
+.skill .item:nth-of-type(5) .level{
+  animation-delay: 0.8s;
+}
